@@ -1,10 +1,9 @@
 {
-  "label": "SSO Providers",
-  "position": 1,
+  "label": "Billing",
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "description": "SSO guide"
+    "description": "Billing configuration guide"
   }
 }
