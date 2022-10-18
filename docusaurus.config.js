@@ -86,19 +86,19 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Onboarding',
-                to: '/docs/onboarding',
-              },
-              {
-                label: 'Citadel',
-                to: '/docs/citadel',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Onboarding',
+          //       to: '/docs/onboarding',
+          //     },
+          //     {
+          //       label: 'Citadel',
+          //       to: '/docs/citadel',
+          //     },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
