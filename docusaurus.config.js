@@ -149,7 +149,7 @@ const config = {
             items: [
               {
                 label: 'News',
-                to: '/news',
+                to: 'src/news',
               },
               {
                 label: 'GitHub',

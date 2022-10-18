@@ -105,6 +105,6 @@ for key, value in content.items():
             else:
                 print('Document %s already up-to-date' % file_name)
         else:
-            docs_repository.create_file('docs/news/' + file_name,
+            docs_repository.create_file('src/news/' + file_name,
                 'Update %s news document' % file_name, news_file.encode('utf-8'), branch=MAIN_BRANCH)
             print('Created %s document' % file_name)
