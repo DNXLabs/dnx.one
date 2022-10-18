@@ -146,7 +146,7 @@ const config = {
             items: [
               {
                 label: 'News',
-                to: 'src/news',
+                to: '/news',
               },
               {
                 label: 'GitHub',
