@@ -1,0 +1,11 @@
+version: "3"
+services:
+  python:
+    build:
+      context: .
+    env_file:
+      - .env
+    container_name: news-python-container
+    restart: unless-stopped
+    volumes:
+      - .:/app
