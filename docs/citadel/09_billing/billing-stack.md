@@ -4,11 +4,6 @@ title:: Deploying the Billing stack
 
 # DNX One Tutorial: Billing Stack
 
-| Version  | 1.0             |
-|:---------|:----------------|
-| Author   | Allan Denot  |
-| Revision | -  |
-
 The billing stack contains the following resources:
 
 1. Billing role that trusts your Identity Provider (SSO)

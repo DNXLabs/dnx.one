@@ -2,13 +2,6 @@
 title: Email Address for AWS Foundation
 ---
 
-**DNX ONE TUTORIAL**
-
-| **Version** | **1.2** |
-| --- | --- |
-| **Author** | **Pietro Marmelo** |
-| **Revision** | **Pietro Marmelo** |
-
 This document refers to an email structure (email and aliases) DNX suggests to the customer, in order to be used on the AWS well-architected foundation.
 
 Please, note the differences between providers. If you have a provider that is not listed below, please contact the DNX team.

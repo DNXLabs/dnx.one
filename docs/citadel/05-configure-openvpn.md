@@ -4,11 +4,6 @@ title: Configure OpenVPN
 
 # DNX Tutorial - How To manage the OpenVPN module
 
-| Version  | 1.3             |
-| -------- | --------------- |
-| Author   | Pietro Marmelo  |
-| Revision | Marcus Nogueira |
-
 ## This tutorial aims to show how to create and revoke users in SSM in order to access the Open VPN.
 
 Topics:
@@ -20,7 +15,7 @@ Topics:
 
  Log into AWS Console.
 1. Switch to the Account that you want to create a new User
-* For example: If you want to create a new user in the nonprod account, Switch to Nonprod Account. 
+* For example: If you want to create a new user in the nonprod account, Switch to Nonprod Account.
 2. Choose your region
 3. Go to Services → Systems Manager → Parameter Store
 
@@ -43,7 +38,7 @@ When a user is added, OpenVPN Server creates a ".ovpn" and ".mfa" files to an S3
 
 To download this file:
 
-1. Access AWS Console → < Account> 
+1. Access AWS Console → < Account>
 2. S3
 3. Find a bucket called openvpn-< Account>-< random number>
 
@@ -61,7 +56,7 @@ To download this file:
 1. * Download and install OpenVPN Tunnelblick client: https://tunnelblick.net/release/Tunnelblick_3.8.4a_build_5601.dmg
 2. Click on TunnelBlick icon in the menu bar at the top and select 'VPN Details' option.
 ![OpenVPN01](/assets/images/OpenVPN_06.png)
-3. To install a configuration file (.ovpn), drag and drop it on the list of configurations in the 'Configurations' tab of the 'VPN Details' window.  
+3. To install a configuration file (.ovpn), drag and drop it on the list of configurations in the 'Configurations' tab of the 'VPN Details' window.
 ![OpenVPN01](/assets/images/OpenVPN_07.png)
 4. On the “user name” field, type exactly your ".ovpn" file name, except by the file extension. E.g: if you have a file called “dnx-devop1.ovpn", use “dnx-devop1” as username.
 5. Open the ".mfa" file and copy the MFA URL.
@@ -76,7 +71,7 @@ To download this file:
 1. Download OpenVPN client.
  * OpenVPN for Windows:
  - https://swupdate.openvpn.org/community/releases/openvpn-install-2.4.8-I602-Win10.exe
-2. Click on OpenVPN client.  
+2. Click on OpenVPN client.
 ![OpenVPN01](/assets/images/OpenVPN_10.png)
 3. Click at Import/From local file and choose the certificate.
 4. Click on OpenVPN client again and click on openvpn.mgmt.cloud.domain and click on connect.
@@ -110,7 +105,7 @@ If you are having problems to connect to the VPN server using the default OpenVP
 3. Choose your .OVPN file and click in "Open".
 ![OpenVPN01](/assets/images/OpenVPN_15.png)
 4. Your Profile Name and Status will appear on main screen.
-![OpenVPN01](/assets/images/OpenVPN_16.png) 
+![OpenVPN01](/assets/images/OpenVPN_16.png)
 5. Click on top right menu and click in "Connect".
 ![OpenVPN01](/assets/images/OpenVPN_17_0.png)
 ![OpenVPN01](/assets/images/OpenVPN_17.png)

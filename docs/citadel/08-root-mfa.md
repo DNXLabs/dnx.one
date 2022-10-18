@@ -2,14 +2,6 @@
 title: Enabling MFA for Root user
 ---
 
-# DNX ONE TUTORIAL
-
-| Version  | 1.2             |
-|:---------|:----------------|
-| Author   | Pietro Marmelo  |
-| Revision | Pietro Marmelo  |
-
-
 ## Enabling AWS Root user MFA
 
 In this tutorial, we will show how to enable the AWS root user MFA to protect your account. The original AWS documentation can be accessed here: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-root
@@ -33,7 +25,7 @@ In this tutorial, we will show how to enable the AWS root user MFA to protect yo
 5. Open the **virtual MFA app on the device**. If you don't have a virtual MFA app installed in your device you can choose one here:
   https://aws.amazon.com/iam/features/mfa/?audit=2019q1. Choose the option to **create a new virtual MFA device or account**.
 
-6. The easiest way to configure the app is to use the app to scan the **QR code**. If you cannot scan the code, you can type the configuration information manually. 
+6. The easiest way to configure the app is to use the app to scan the **QR code**. If you cannot scan the code, you can type the configuration information manually.
   To use the QR code to configure the virtual MFA device, from the wizard, choose "**Show QR code**". Then follow the app instructions for scanning the code.
   In the Manage MFA Device wizard, choose **Show secret key**, and then type the secret key into your MFA app.
 

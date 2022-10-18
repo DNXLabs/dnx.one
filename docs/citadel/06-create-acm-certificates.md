@@ -4,11 +4,6 @@ title: Configure ACM Certificates
 
 ## DNX Tutorial - How to create ACM certificates
 
-| Version  | 1.0             |
-| -------- | --------------- |
-| Author   | Marcus Nogueira |
-| Revision | Pietro Marmelo  |
-
 
 To enhance the security of the environment, Well Architected Foundation needs valid certificates. AWS offers this service free of charge for services that are within its infrastructure.
 
@@ -45,7 +40,7 @@ This document is intended to demonstrate the steps to create the certificates ne
 
    ![ACM_004](/assets/images/ACM_04.png)
    To add another name, choose Add another name to this certificate and type the name in the text box. This is useful for protecting both a bare or apex domain (such as example.com) and its subdomains such as *.example.com).
-   
+
 7. When you finish adding names, choose **Next**.
 
 8. On the **Select validation method page**, choose either DNS validation or Email validation, depending on your needs. If you are able to edit your DNS configuration, we recommend that you use DNS domain validation rather than email validation.
@@ -59,5 +54,5 @@ This document is intended to demonstrate the steps to create the certificates ne
 
 12. **You need to repeat the entire process in the next region**.
 
-    
+
 

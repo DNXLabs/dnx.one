@@ -3,11 +3,6 @@ title: Azure SSO
 ---
 
 
-| **Version** | **1.0** |
-| --- | --- |
-| **Author** | **Marcus Nogueira** |
-| **Revision** | **Pietro Marmelo** |
-
 # Configure Azure Active Directory single sign-on (SSO) integration with Amazon Web Services (AWS)
 
 

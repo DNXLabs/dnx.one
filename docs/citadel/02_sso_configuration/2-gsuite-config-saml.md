@@ -2,11 +2,6 @@
 title: GSuite SSO
 ---
 
-| **Version** | **2.1** |
-| --- | --- |
-| **Author** | **Helder Klemp** |
-| **Revision** | **Flavio Oliveira** |
-
 # SSO Configuration using Google GSuite and AWS
 
 In this tutorial, the complete SSO configuration between AWS and Gsuite will be covered.

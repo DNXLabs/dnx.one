@@ -4,11 +4,6 @@ title: Enabling billing access to IAM users
 
 # DNX One Tutorial: Enabling billing access to IAM users
 
-| Version  | 1.0             |
-|:---------|:----------------|
-| Author   | Pietro Marmelo  |
-| Revision | -  |
-
 
 1. Sign in to AWS Management Console using your root credentials: https://console.aws.amazon.com.
 2. Select to login with root credentials if not already.
