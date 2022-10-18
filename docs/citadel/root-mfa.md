@@ -1,5 +1,7 @@
 ---
 title: Enabling MFA for Root user
+sidebar_position: 8
+sidebar_label: Enabling MFA
 ---
 
 ## Enabling AWS Root user MFA

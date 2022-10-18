@@ -1,5 +1,7 @@
 ---
 title: Configure ACM Certificates
+sidebar_position: 6
+sidebar_label: Configure ACM Certificates
 ---
 
 ## DNX Tutorial - How to create ACM certificates

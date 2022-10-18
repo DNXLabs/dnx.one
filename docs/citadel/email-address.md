@@ -1,5 +1,7 @@
 ---
 title: Email Address for AWS Foundation
+sidebar_position: 3
+sidebar_label: Email Address
 ---
 
 This document refers to an email structure (email and aliases) DNX suggests to the customer, in order to be used on the AWS well-architected foundation.

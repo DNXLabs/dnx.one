@@ -1,5 +1,7 @@
 ---
 title: Create Source Repositories
+sidebar_position: 4
+sidebar_label: Source Repositories
 ---
 
 # Create Source Repositories
@@ -17,7 +19,7 @@ Link to create Subgroup
 # BitBucket
 Inside your account create a new blank repository in the Bitbucket
 
-![bitbucket](/assets/images/bitbucket_01.png) 
+![bitbucket](/assets/images/bitbucket_01.png)
 
 Select the workspace
 Select the project

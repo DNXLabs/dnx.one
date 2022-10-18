@@ -1,5 +1,7 @@
 ---
 title: Configure AWS Codestar Connection
+sidebar_position: 7
+sidebar_label: AWS Codestar
 ---
 
 **DNX - AWS Codestar Connection**

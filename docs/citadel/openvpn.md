@@ -1,5 +1,7 @@
 ---
-title: Configure OpenVPN
+title: Configure VPN Connection
+sidebar_position: 5
+sidebar_label: VPN Configuration
 ---
 
 # DNX Tutorial - How To manage the OpenVPN module

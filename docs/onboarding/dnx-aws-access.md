@@ -1,5 +1,5 @@
 ---
-title: DNX Access
+title: DNX AWS Access
 description: Providing DNX secure access in your AWS Account.
 ---
 
