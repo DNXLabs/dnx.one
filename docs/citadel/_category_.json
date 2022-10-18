@@ -1,10 +1,10 @@
 {
-  "label": "Deploying Citadel",
-  "position": 1,
+  "label": "Citadel",
+  "position": 2,
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "description": "Citadel deployment guide"
+    "title": "Citadel"
   }
 }
