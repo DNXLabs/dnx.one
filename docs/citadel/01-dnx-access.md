@@ -1,10 +1,10 @@
 ---
 title: DNX Access
+description: Providing DNX secure access in your AWS Account.
 ---
 
 ## Description
-In this tutorial, we will show how to set up the `DNXAccess` role that will give DNX secure access to deploy the Citadel environment.
-
+In this tutorial, we will show how to set up the `DNXAccess` role that will give DNX secure access in your AWS account.
 ### IAM Role
 DNX will have access into the account via AWS IAM Roles. Usign this approach we can establish trust relationships between the customer accounts and DNX account.
 
