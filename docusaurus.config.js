@@ -45,6 +45,7 @@ const config = {
           path: 'src/news',
           blogTitle: 'Release News',
           blogSidebarTitle: 'All Releases',
+          blogDescription: 'Release news for all DNX modules.',
           blogSidebarCount: 'ALL',
           feedOptions: {
             type: 'all',
