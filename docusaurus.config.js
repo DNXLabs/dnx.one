@@ -38,7 +38,22 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
-        blog: false,
+        blog: {
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          id: 'second-blog',
+          /**
+           * URL route for the blog section of your site.
+           * *DO NOT* include a trailing slash.
+           */
+          routeBasePath: 'src/news',
+          /**
+           * Path to data on filesystem relative to site dir.
+           */
+          path: 'src/news',
+          blogTitle: 'Release News',
+          blogSidebarTitle: 'Recent Releases'
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -69,7 +84,12 @@ const config = {
             label: 'Documentation',
           },
           { to: '/terraform/modules', label: 'Terraform Modules', position: 'left' },
-          { to: '/news', label: 'News', position: 'left' },
+          {
+            to: 'src/news',
+            label: 'News',
+            position: 'left',
+            path: 'src/news',
+          },
           {
             href: 'https://www.dnx.solutions',
             label: 'Website',
