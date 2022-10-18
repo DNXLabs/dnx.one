@@ -39,20 +39,17 @@ const config = {
           showLastUpdateTime: true,
         },
         blog: {
-          blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
-          id: 'second-blog',
-          /**
-           * URL route for the blog section of your site.
-           * *DO NOT* include a trailing slash.
-           */
-          routeBasePath: 'src/news',
-          /**
-           * Path to data on filesystem relative to site dir.
-           */
+          id: 'release-news',
+          routeBasePath: '/news',
+          postsPerPage: 1,
           path: 'src/news',
           blogTitle: 'Release News',
-          blogSidebarTitle: 'Recent Releases'
+          blogSidebarTitle: 'All Releases',
+          blogSidebarCount: 'ALL',
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} DNX Solutions.`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -85,10 +82,10 @@ const config = {
           },
           { to: '/terraform/modules', label: 'Terraform Modules', position: 'left' },
           {
-            to: 'src/news',
-            label: 'News',
+            to: '/news',
+            label: 'Release News',
             position: 'left',
-            path: 'src/news',
+            path: '/news',
           },
           {
             href: 'https://www.dnx.solutions',
