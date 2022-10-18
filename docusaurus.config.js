@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'assets/images/icon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -59,7 +59,7 @@ const config = {
         title: 'DNX Solutions',
         logo: {
           alt: 'DNX Solutions logo',
-          src: 'img/logo.svg',
+          src: 'assets/images/logo.png',
         },
         items: [
           {
@@ -143,6 +143,12 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
       },
     }),
 }

@@ -1,0 +1,9 @@
+{
+  "label": "Billing",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Billing configuration guide"
+  }
+}

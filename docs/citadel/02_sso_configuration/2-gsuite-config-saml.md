@@ -1,0 +1,180 @@
+---
+title: GSuite SSO
+---
+
+| **Version** | **2.1** |
+| --- | --- |
+| **Author** | **Helder Klemp** |
+| **Revision** | **Flavio Oliveira** |
+
+# SSO Configuration using Google GSuite and AWS
+
+In this tutorial, the complete SSO configuration between AWS and Gsuite will be covered.
+
+Prerequisites:
+
+- GSuite Admin Access
+- AWS Admin Access
+
+## 1-Create Custom user attributes in GSuite
+
+To enable extra fields per user in GSuite it is necessary to create custom attributes, these attributes will be used to assign IAM Roles for users later in this tutorial.
+
+Steps:
+
+A. Log Into GSuite Admin Portal
+B. Go to Directory -\&gt; USers -\&gt; Manage Custom Attributes
+
+![Gsuite01](/assets/images/Gsuite_SSO/GSUITE_01.png)
+![Gsuite02](/assets/images/Gsuite_SSO/GSUITE_02.png)
+
+C. Click on Add Custom Attributes to Add a new Custom Domain values:
+
+![Gsuite03](/assets/images/Gsuite_SSO/GSUITE_03.png)
+
+Values:
+
+- Category: `AWS SAML`
+- Description: `AWS SAML`
+- Custom Field 1 :
+  - Name: `IAM Role`
+  - Type: `Text`
+  - Visible to Users and Admins
+  - Multi-value
+- Custom Field 2 :
+  - Name: `Session Duration`
+  - Type: `Number`
+  - Visible to Users and Admins
+  - Single-value
+
+## 2- Create SAML App
+
+A. Go to Apps -\&gt; Web and mobile Apps.
+
+![Gsuite04](/assets/images/Gsuite_SSO/GSUITE_04.png)
+
+B. Click on Add-App -> Search for Apps to Create a new App
+
+![Gsuite05](/assets/images/Gsuite_SSO/GSUITE_05.png)
+
+C.Search for Amazon Web Services and Platform Web(SAML)
+
+![Gsuite06](/assets/images/Gsuite_SSO/GSUITE_06.png)
+
+D. Once selected, a Wizard to configure the app is presented. Please download the IDP Metadata .XML file, this configuration should be sent back to the AWS DevOps team to enable the AWS configuration side and click on continue:
+
+![Gsuite07](/assets/images/Gsuite_SSO/GSUITE_07.png)
+
+E. On Service Provider Fields verify if the configuration is correct and click on continue.
+
+![Gsuite08](/assets/images/Gsuite_SSO/GSUITE_08.png)
+
+Attribute Mapping
+
+![Gsuite09](/assets/images/Gsuite_SSO/GSUITE_09.png)
+
+    1. First Mapping:
+      1. [https://aws.amazon.com/SAML/Attributes/RoleSessionName](https://aws.amazon.com/SAML/Attributes/RoleSessionName)
+      2. Basic Information
+      3. Primary Email
+    2. Second Mapping
+      1. [https://aws.amazon.com/SAML/Attributes/Role](https://aws.amazon.com/SAML/Attributes/Role)
+      2. AWS SAML (drop-down value from the custom Field)
+      3. IAM ROLE (drop-down value from the custom Field)
+    3. Third Mapping
+      1. [https://aws.amazon.com/SAML/Attributes/SessionDuration](https://aws.amazon.com/SAML/Attributes/SessionDuration)
+      2. AWS SAML (drop-down value from the custom Field)
+      3. Session Duration  = 43200
+
+F. Enable the App for all users : Click on User Access
+
+![Gsuite10](/assets/images/Gsuite_SSO/GSUITE_10.png)
+
+G. Click on Enable the App for all users.
+
+![Gsuite11](/assets/images/Gsuite_SSO/GSUITE_11.png)
+
+## 3-Setup AWS Side
+
+A. The DevOps Team will receive the metadata XML generated in the previous step and will create the AWS IAM SAML configuration.
+B. Once that is done, they will list you all roles values to be applied for all GSuite users that need to have AWS access.
+C. The following values area a sample to IAM Roles to be added into GSuite
+
+Administrator
+
+`arn:aws:iam::99999999999:role/AdministratorAccess,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+Data Scientist:
+
+`arn:aws:iam::99999999999:role/DataScientist,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+Database Administrator:
+
+`arn:aws:iam::99999999999:role/DatabaseAdministrator,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+Network Administrator:
+
+`arn:aws:iam::99999999999:role/NetworkAdministrator,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+Power User:
+
+`arn:aws:iam::99999999999:role/PowerUserAccess,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+Audit:
+
+`arn:aws:iam::99999999999:role/SecurityAudit,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+Support User:
+
+`arn:aws:iam::99999999999:role/SupportUser,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+System Administrator:
+
+`arn:aws:iam::99999999999:role/SystemAdministrator,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+View Only:
+
+`arn:aws:iam::99999999999:role/ViewOnlyAccess,arn:aws:iam::99999999999:saml-provider/orgname-sso`
+
+## 4-Add the correct IAM Role for users
+
+
+A. Google Admin - > Directory - > Users to go to each user that will have AWS access
+
+![Gsuite12](/assets/images/Gsuite_SSO/GSUITE_12.png)
+
+B. Click on User Information to  set the IAM Roles (sent by DNX DevOps team) generated on AWS.
+
+![Gsuite13](/assets/images/Gsuite_SSO/GSUITE_13.png)
+
+C. Add under the AWS SAML sections the values for the IAM Roles (sent by DNX DevOps team) generated on AWS.
+
+![Gsuite14](/assets/images/Gsuite_SSO/GSUITE_14.png)
+
+D. One user can have multiple roles like: Administrator, View Only, Power User, etc. Each role needs to be added in a separate line.
+
+E. In case that a specific user has access to different accounts, the roles need to be added in separate lines. For example: add the non-production administrator role in the first line and in the next line add a production administrator role.
+
+F. For the Session Duration value please add a number of seconds to keep the SSO Session active. The default value is 43200.
+
+![Gsuite15](/assets/images/Gsuite_SSO/GSUITE_15.png)
+
+5-Testing SSO Access
+
+A. Log in your email account on GSuite;
+
+B. Click on the app list button:
+
+![Gsuite16](/assets/images/Gsuite_SSO/GSUITE_16.png)
+
+C. Scroll down until you find the Amazon Web Services icon and click on it:
+
+![Gsuite17](/assets/images/Gsuite_SSO/GSUITE_17.png)
+
+D. Select the Main Role you are logging in to and click on Sign In:
+
+![Gsuite18](/assets/images/Gsuite_SSO/GSUITE_18.png)
+
+E. Select the Role to jump to and perform the tasks:
+
+![Gsuite11](/assets/images/Gsuite_SSO/GSUITE_19.png)
