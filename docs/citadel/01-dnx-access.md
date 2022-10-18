@@ -13,7 +13,7 @@ DNX will have access into the account via AWS IAM Roles. Usign this approach we 
 
 ## Project Onboarding
 
-Steps:
+### Steps
 
 1. Login to AWS console.
 2. Go to Services and type "CloudFormation".
@@ -56,22 +56,26 @@ https://dnx-assets-prod.s3-ap-southeast-2.amazonaws.com/assets/dnx-master-role.y
 
 
 12. When the status changes to CREATE_COMPLETE, the process is done.
-Account ID (Master Account).
-Each Amazon account has an associated 12-digit account identifier (ID). This identifier needs to be sent to DNX to start the Well Architected Foundation.
 
-Below is a way to know your account number.
+
+### Account ID
+Each Amazon account has an associated 12-digit account identifier (ID). This identifier needs to be sent to DNX to start the Citadel Project.
+
+#### How to get your AWS Account ID
 1. Log in to the AWS Management Console.
 2. At the top of the page, click the link that is your account name.
 3. Click My Account.
 4. Your 12-digit account ID is listed under Account Settings.
 
-When the dnx-root role is created please notify DNX and send us the Account ID number.
+When the `DNXAcces` role is created please notify DNX and send us the Account ID number.
 
 <iframe width="720" height="418" src="https://www.youtube.com/embed/kPxM4PAiSAc" frameborder="0" allowfullscreen></iframe>
 
 ## Project Offboarding
 
 At the end of the project, the dnx-root Couldformation stack should be removed, removing the IAM role used by DNX during the project and preventing any access after the project is completed.
+
+### Steps
 
 1. Log in to the AWS Management Console.
 2. Go to Cloudformation and select the dnx-root stack
