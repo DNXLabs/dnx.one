@@ -13,23 +13,24 @@ DNX will have access into the account via AWS IAM Roles. Usign this approach we 
 
 ## Project Onboarding
 
+<iframe width="720" height="418" src="https://www.youtube.com/embed/kPxM4PAiSAc" frameborder="0" allowfullscreen></iframe>
+
 ### Steps
 
 1. Login to AWS console.
 2. Go to Services and type "CloudFormation".
 3. Click on CloudFormation.
 
- ![Image](/assets/images/preprojecttasksimage1.png)
+   ![Image](/assets/images/preprojecttasksimage1.png)
 
 4. Click on Create stack
 
- ![Image](/assets/images/preprojecttasksimage2.png)
+   ![Image](/assets/images/preprojecttasksimage2.png)
 
 5. On the next page insert the stack link on Amazon S3 URL. Stack link:
 https://dnx-assets-prod.s3-ap-southeast-2.amazonaws.com/assets/dnx-master-role.yml
 
-
-![Image](/assets/images/preprojecttasksimage3.png)
+   ![Image](/assets/images/preprojecttasksimage3.png)
 
 
 6. Click Next.
@@ -42,17 +43,17 @@ https://dnx-assets-prod.s3-ap-southeast-2.amazonaws.com/assets/dnx-master-role.y
    5.  OrganizationAccountAccessRoleName - Name of Organization Account Access Role that DNX will be able to assume role. Leave as default.
 9.  By default our stack will set up a full access role and grant DNX access for Billing. Click Next.
 
-![Image](/assets/images/preprojecttasksimage4.png)
+   ![Image](/assets/images/preprojecttasksimage4.png)
 
 1. On Configure stack options click Next.
 2.  On the Review page, mark the checkbox "I acknowledge that AWS CloudFormation might create IAM resources with custom names" and click in Create stack.
 
-![Image](/assets/images/preprojecttasksimage5.png)
+   ![Image](/assets/images/preprojecttasksimage5.png)
 
 
 11. On the Next page, wait for a few minutes and click in Refresh until the process is completed.
 
-![Image](/assets/images/preprojecttasksimage6.png)
+   ![Image](/assets/images/preprojecttasksimage6.png)
 
 
 12. When the status changes to CREATE_COMPLETE, the process is done.
@@ -68,8 +69,6 @@ Each Amazon account has an associated 12-digit account identifier (ID). This ide
 4. Your 12-digit account ID is listed under Account Settings.
 
 When the `DNXAcces` role is created please notify DNX and send us the Account ID number.
-
-<iframe width="720" height="418" src="https://www.youtube.com/embed/kPxM4PAiSAc" frameborder="0" allowfullscreen></iframe>
 
 ## Project Offboarding
 
