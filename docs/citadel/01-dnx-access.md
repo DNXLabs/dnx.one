@@ -1,24 +1,19 @@
 ---
-title: Root Tutorial
+title: DNX Access
 ---
 
-# DNX ONE TUTORIAL
-_Version: 1.5_
+## Description
+In this tutorial, we will show how to set up the `DNXAccess` role that will give DNX secure access to deploy the Citadel environment.
 
-_Author: Pietro Marmelo_
+### IAM Role
+DNX will have access into the account via AWS IAM Roles. Usign this approach we can establish trust relationships between the customer accounts and DNX account.
 
-_Revision: Pietro Marmelo_
+## Prerequisites
+   - AWS Admin Access to your AWS Master Account
 
-## DNX-ROOT role for the DNX Well Architected Foundation
-### Project on-boarding
-In this tutorial, we will show how to set up the dnx-role that will give DNX secure access to create the DNX Well Architected Foundation environments and check your Master Account ID.
-
-Prerequisites:
-- AWS Admin Access to your AWS Master Account
+## Project Onboarding
 
 Steps:
-
-<iframe width="720" height="418" src="https://www.youtube.com/embed/kPxM4PAiSAc" frameborder="0" allowfullscreen></iframe>
 
 1. Login to AWS console.
 2. Go to Services and type "CloudFormation".
@@ -72,7 +67,9 @@ Below is a way to know your account number.
 
 When the dnx-root role is created please notify DNX and send us the Account ID number.
 
-### Project off-boarding
+<iframe width="720" height="418" src="https://www.youtube.com/embed/kPxM4PAiSAc" frameborder="0" allowfullscreen></iframe>
+
+## Project Offboarding
 
 At the end of the project, the dnx-root Couldformation stack should be removed, removing the IAM role used by DNX during the project and preventing any access after the project is completed.
 
