@@ -37,6 +37,7 @@ const config = {
           editUrl: ({ versionDocsDirPath, docPath }) => `https://github.com/DNXLabs/dnx.one/edit/main/${versionDocsDirPath}/${docPath}`,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          routeBasePath: '/'
         },
         blog: {
           id: 'release-news',
