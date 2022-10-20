@@ -74,7 +74,9 @@ const config = {
         logo: {
           alt: 'DNX Solutions logo',
           src: 'assets/images/logo.png',
+          href: '/category/foundation',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
@@ -99,6 +101,10 @@ const config = {
             // label: 'GitHub',
             position: 'right',
             className: 'navbar-item-github',
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
         ],
       },
