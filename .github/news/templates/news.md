@@ -13,7 +13,7 @@ nav_order: {{ index }}
 Created at: {{ new.created_at }}
 
 <!-- TODO: Include source link to the version tag -->
-Source:
+Source: {{ new.url }}
 
 ---
 

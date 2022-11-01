@@ -53,7 +53,8 @@ for release in all_releases:
         'repository': release['repository'],
         'release': release['tag_name'],
         'body': release['body'],
-        'created_at': release['created_at'].split('T')[0]
+        'created_at': release['created_at'].split('T')[0],
+        'url': release['html_url'],
         }
     ]
     year = str(datetime_object.year)
