@@ -1,6 +1,5 @@
 ---
 title: License
-sidebar_position: 1
 sidebar_label: License
 ---
 
