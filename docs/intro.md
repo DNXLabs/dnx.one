@@ -4,6 +4,10 @@ title: Who is DNX?
 sidebar_label: Who is DNX?
 ---
 
-DNX Solutions is a specialised cloud consulting company focused on cloud transformation projects and an AWS Consulting partner. DNX Solutions provides cloud-native solutions in a more efficient way.
+At DNX Solutions, we work to bring a better cloud and application experience for digital-native companies in Australia and around the world.
 
-Please, consult our Website for more details: https://www.dnx.solutions/
+Our current focus areas are AWS, Well-Architected Solutions, Serverless, Containers, ECS, Kubernetes, Continuous Integration/Continuous Delivery and Service Mesh.
+
+We are always [looking at](https://dnx.solutions/about-us/career/) new talents, focusing on cloud-native concepts.
+
+Check our [open-source projects](https://github.com/DNXLabs)and follow us on [Linkedin](https://dnx.solutions/aws-amplify-create-custom-resolvers-programmatically) or [Facebook](https://www.facebook.com/SolutionsDNX).
