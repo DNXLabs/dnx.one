@@ -37,7 +37,7 @@ const config = {
           editUrl: ({ versionDocsDirPath, docPath }) => `https://github.com/DNXLabs/dnx.one/edit/main/${versionDocsDirPath}/${docPath}`,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          routeBasePath: '/'
+          routeBasePath: '/docs',
         },
         blog: {
           id: 'release-news',
@@ -74,7 +74,7 @@ const config = {
         logo: {
           alt: 'DNX Solutions logo',
           src: 'assets/images/logo.png',
-          href: '/category/foundation',
+          href: '#',
         },
         hideOnScroll: true,
         items: [
