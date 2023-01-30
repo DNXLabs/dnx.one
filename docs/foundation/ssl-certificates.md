@@ -4,7 +4,7 @@ sidebar_position: 6
 sidebar_label: Configure ACM Certificates
 ---
 
-## DNX Tutorial - How to create ACM certificates
+**DNX Tutorial - How to create ACM certificates**
 
 
 To enhance the security of the environment, Well Architected Foundation needs valid certificates. AWS offers this service free of charge for services that are within its infrastructure.
@@ -17,11 +17,11 @@ The Northern Virginia region is needed, because global resources like CloudFront
 
 This document is intended to demonstrate the steps to create the certificates needed to use on Well Architected Foundation.
 
-### Topics:
+**Topics:**
 
  - Request ACM certificates
 
-### Request a certificate.
+## Requesting a certificate:
 
  Log into AWS Console.
 1. Switch to specific account (e.g.: nonprod or prod).

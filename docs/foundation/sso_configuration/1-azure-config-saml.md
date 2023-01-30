@@ -7,7 +7,7 @@ title: Azure SSO
 
 
 
-## SCOPE
+## Scope
 
 In this tutorial, you&#39;ll learn how to integrate Amazon Web Services (AWS) with Azure Active Directory (Azure AD). When you integrate Amazon Web Services (AWS) with Azure AD, you can:
 
@@ -19,7 +19,7 @@ In this tutorial, you&#39;ll learn how to integrate Amazon Web Services (AWS) wi
 ![Azure01](/assets/images/Azure_SSO/az_sso_01.png)
 
 
-## Prerequisites
+### Prerequisites
 
 To get started, you need the following items:
 
@@ -28,9 +28,9 @@ To get started, you need the following items:
 
 ---
 
-## Step 1 - On Azure Active Directory Create one application for each account (Shared-Services, Prod, Non-Prod and Audit)
+### Step 1 - On Azure Active Directory Create one application for each account (Shared-Services, Prod, Non-Prod and Audit)
 
-## Adding Amazon Web Services (AWS) from the gallery
+#### Adding Amazon Web Services (AWS) from the gallery
 
 To configure the integration of Amazon Web Services (AWS) into Azure AD, you need to add Amazon Web Services (AWS) from the gallery to your list of managed SaaS apps.
 
@@ -46,7 +46,7 @@ To configure the integration of Amazon Web Services (AWS) into Azure AD, you nee
 
 ---
 
-## Step2 - Configure Azure AD SSO**
+### Step2 - Configure Azure AD SSO**
 
 Follow these steps to enable Azure AD SSO in the Azure portal.
 
@@ -105,7 +105,7 @@ We recommend this approach for the following reasons:
 
 ---
 
-## Step3 - Configure Azure AD SSO - Audit Account**
+### Step3 - Configure Azure AD SSO - Audit Account**
 
 - Follow these steps to enable Azure AD SSO in the Azure portal.
 
@@ -150,7 +150,7 @@ We recommend this approach for the following reasons:
 
 ---
 
-## Step4 - Configure Amazon Web Services (AWS) SSO
+### Step4 - Configure Amazon Web Services (AWS) SSO
 
 **You will need to do this step on each account (Shared-Services, Prod, NonProd)**
 
@@ -256,7 +256,7 @@ a. Copy the user Access key ID and Secret access key.
 
 ---
 
-## Step 5 - How to configure role provisioning in Amazon Web Services (AWS)
+### Step 5 - How to configure role provisioning in Amazon Web Services (AWS)
 
 1.  ### In the Azure AD management portal, in the AWS app, go to Provisioning.
 
@@ -280,29 +280,29 @@ d. Save the setting by selecting Save.
 
 ---
 
-## Step 6 - Assign the Azure AD test user
+### Step 6 - Assign the Azure AD test user
 
-### In this section, you&#39;ll enable user to use Azure single sign-on by granting access to Amazon Web Services (AWS).
+#### In this section, you&#39;ll enable user to use Azure single sign-on by granting access to Amazon Web Services (AWS).
 
-1. ### In the Azure portal, search for and select Azure Active Directory.
+1. In the Azure portal, search for and select Azure Active Directory.
 
-2. ### Within the Azure Active Directory overview menu, choose Enterprise Applications \&gt; All applications.
+2. Within the Azure Active Directory overview menu, choose Enterprise Applications \&gt; All applications.
 
-3. ### In the application list, select the AWS application.
+3. In the application list, select the AWS application.
 
-4. ### In the app&#39;s overview page, find the Manage section and select Users and groups.
+4. In the app&#39;s overview page, find the Manage section and select Users and groups.
 
 ![Azure38](/assets/images/Azure_SSO/az_sso_38.png)
 
-5. ### Select Add user, then select Users and groups in the Add Assignment dialog.
+5. Select Add user, then select Users and groups in the Add Assignment dialog.
 
 ![Azure39](/assets/images/Azure_SSO/az_sso_39.png)
 
-6. ### In the Users and groups dialog, select the user from the Users list, then click the Select button at the bottom of the screen.
+6. In the Users and groups dialog, select the user from the Users list, then click the Select button at the bottom of the screen.
 
-7. ### Select the role, in the Select Role dialog, select the appropriate role for the user from the list and then click the Select button at the bottom of the screen.
+7. Select the role, in the Select Role dialog, select the appropriate role for the user from the list and then click the Select button at the bottom of the screen.
 
-8. ### In the Add Assignment dialog, select the role desired and click the Assign button.
+8. In the Add Assignment dialog, select the role desired and click the Assign button.
 
 ![Azure40](/assets/images/Azure_SSO/az_sso_40.png)
 
@@ -322,6 +322,6 @@ Ps: Instead of adding User, you can add a group as well.
 
 ![Azure41](/assets/images/Azure_SSO/az_sso_41.png)
 
-1. ### You will have access to all applications
+- You will have access to all applications:
 
 ![Azure42](/assets/images/Azure_SSO/az_sso_42.png)

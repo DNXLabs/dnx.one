@@ -5,40 +5,13 @@ sidebar_position: 11
 ---
 # AWS Organization and Accounts
 
+## Scope
+
 Create the organization following the steps at: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tutorials_basic.html#tutorial-orgs-step1
 
 Create the new AWS Accounts as per the architecture defined.
 
-The a common account structure is:
-```bash
-{
-"data": {
-"0-0": "audit",
-"h-0": "Account Name",
-"h-1": "Purpose",
-"h-2": "Required?",
-"h-3": "Description",
-"0-1": "Long-term log storage, centralization of Security and Compliance events",
-"0-2": "Yes",
-"0-3": "",
-"1-0": "shared-services",
-"1-1": "Common services like ECR, CodePipeline, OpenSearch, etc.",
-"1-2": "No",
-"2-0": "production",
-"2-1": "Production workloads",
-"2-2": "Yes",
-"3-0": "staging",
-"3-1": "Staging workloads",
-"3-2": "No",
-"4-0": "development",
-"4-1": "Development workloads",
-"4-2": "No"
-},
-"cols": 3,
-"rows": 5
-}
-```
-
+    
 :::caution
 
 ### AWS Account Email Addresses
@@ -84,8 +57,6 @@ The process of implementation of Citadel requires that the AWS account is setup 
 
 When enabled, DNX engineers can log on to the accounts using an MFA-enforced SSO and assume a role in the target AWS account, a similar process is described at https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html).
 
-## Requirements
-Admin access to the Master (Management) AWS account.
 
 ## Creating the CloudFormation StackSet
 
@@ -116,28 +87,7 @@ If you created the AWS Organization and it's the first time accessing StackSets,
     ![Image](https://files.readme.io/0e98cc4-Untitled_picture0.png)
     
 7. Enter the stack name as "identity-baseline", set the OrgName as your organization name
-   ```shell
-   {
-   "data": {
-   "0-0": "CreateInfraDeployUser",
-   "1-0": "DNX",
-   "2-0": "Citadel Automation",
-   "0-1": "user to be used in some pipeline systems. leave as default (false).",
-   "1-1": "allow DNX access to this account. Change to true.",
-   "2-1": "allow access from Citadel Automation (required for Citadel-as-a-Service)",
-   "3-1": "name of YOUR organization for purpose of using in resources naming. E.g.: “apple” or “tesla”.",
-   "4-1": "ARN of SAML Provider to use. This creates IAM roles 'InfraDeploy' and 'BillingAccess'. \n\nThis can be left blank as it will be adjusted later.\n\n*Use when the SAML Provider is created manually in the account, otherwise use SAMLProviderDocument instead.*",
-   "5-1": "SAML Provider XML Document. \nUse only when XML is less then 4096 characters. \nThis creates the SAML Provider and IAM roles 'InfraDeploy' and 'BillingAccess'. Add SAML document if available or leave the default and it can be added later",
-   "6-1": "Add ARN or Account ID that can deploy resources in this account. \nAn exemple would be the ARN of a InfraDeploy role from the Shared-Services AWS account\n\nThis can be left blank as it will be adjusted later.",
-   "3-0": "OrgName",
-   "4-0": "SAMLProviderArn",
-   "5-0": "SAMLProviderDocument",
-   "6-0": "TrustedArns"
-   },
-   "cols": 2,
-   "rows": 7
-   }
-   ```
+
 
 ![Image](https://files.readme.io/ab8a1ba-Untitled_picture01.png)
 
