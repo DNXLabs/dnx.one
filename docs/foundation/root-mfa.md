@@ -4,15 +4,17 @@ sidebar_position: 8
 sidebar_label: Enabling MFA
 ---
 
-## Enabling AWS Root user MFA
+## Scope
+
+**Enabling AWS Root user MFA**
 
 In this tutorial, we will show how to enable the AWS root user MFA to protect your account. The original AWS documentation can be accessed here: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-root
 
-### Prerequisites:
+**Prerequisites:**
 
 - AWS Admin Access to your AWS Master Account
 
-### Steps:
+## Steps:
 
 1. Sign in to the AWS Management Console using the email used to create the account.
 2. On the right side of the navigation bar, choose your account name, and choose My Security Credentials. Then expand the Multi-Factor Authentication (MFA) section on the page.
