@@ -10,12 +10,17 @@ DNX will have access into the account via AWS IAM Roles. Usign this approach we 
 
 ## Prerequisites
    - AWS Admin Access to your AWS Master Account
+   - Your organization name. (Talk with a DNX representative to get this information).
 
 ## Project Onboarding
 
 <iframe width="720" height="418" src="https://www.youtube.com/embed/kPxM4PAiSAc" frameborder="0" allowfullscreen></iframe>
 
-### Steps
+### Automatic Steps
+
+1. [Access the link to configure your account](https://ap-southeast-2.console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/quickcreate?templateURL=https%3A%2F%2Fdnx-assets-prod.s3-ap-southeast-2.amazonaws.com%2Fassets%2Fdnx-master-role.yml&stackName=dnx-access&param_AccountCreationPolicy=false&param_OrgName=YOU_SHOULD_CHANGE_IT&param_CFDeploy=true&param_Admin=true&param_OrganizationAccountAccessRoleName=OrganizationAccountAccessRole). (It will open a new page redirecting to your AWS Account with the information pre filled)  
+
+### Manual Steps
 
 1. Login to AWS console.
 2. Go to Services and type "CloudFormation".
