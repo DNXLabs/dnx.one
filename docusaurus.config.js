@@ -84,16 +84,23 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          { to: '/terraform/modules', label: 'Terraform Modules', position: 'left' },
+          { to: '/terraform/modules', 
+            label: 'Terraform Modules', 
+            position: 'left' },
           {
             to: '/news',
             label: 'Release News',
             position: 'left',
             path: '/news',
           },
+          // {
+          //   href: 'https://www.dnx.solutions',
+          //   label: 'Website',
+          //   position: 'right',
+          // },
           {
-            href: 'https://www.dnx.solutions',
-            label: 'Website',
+            href: 'https://dnx.freshdesk.com/support/login',
+            label: 'Support',
             position: 'right',
           },
           {
