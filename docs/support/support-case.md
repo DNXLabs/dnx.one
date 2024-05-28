@@ -1,6 +1,6 @@
 ---
 title: Create a Support case
-sidebar_position: 5
+sidebar_position: 2
 sidebar_label: Create a support case
 last_update:
   date: 7/01/2022
