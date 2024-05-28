@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -84,8 +85,8 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          { to: '/terraform/modules', 
-            label: 'Terraform Modules', 
+          { to: '/terraform/modules',
+            label: 'Terraform Modules',
             position: 'left' },
           {
             to: '/news',
@@ -173,8 +174,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} DNX Solutions. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
       },
       docs: {
         sidebar: {
