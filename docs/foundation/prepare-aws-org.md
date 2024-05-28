@@ -1,7 +1,7 @@
 ---
 title: "Preparing your AWS Organization and Accounts"
 sidebar_label: Preparing your AWS Organization and Accounts
-sidebar_position: 11
+sidebar_position: 1
 ---
 # AWS Organization and Accounts
 
