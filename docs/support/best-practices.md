@@ -3,7 +3,7 @@ title: Managed Services Operation Practices
 sidebar_position: 1
 sidebar_label: Managed Services Operation Practices
 last_update:
-  date: 21/06/2024
+  date: 06/21/2024
   author: Cleyton Nogueira
 
 ---
