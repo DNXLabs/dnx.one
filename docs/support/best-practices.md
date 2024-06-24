@@ -3,12 +3,12 @@ title: Managed Services Operation Practices
 sidebar_position: 1
 sidebar_label: Managed Services Operation Practices
 last_update:
-  date: 06/21/2024
+  date: 06/24/2024
   author: Cleyton Nogueira
 
 ---
 
-This document outlines the definitions and criteria for priority and severity levels used Managed Services support cases. The objective is to ensure a consistent and clear understanding of how cases are categorised, which in turn helps in managing and resolving issues efficiently.
+This document outlines the definitions and criteria for priority and severity levels used in Managed Services support cases. The objective is to ensure a consistent and clear understanding of how cases are categorised, which in turn helps in managing and resolving issues efficiently.
 
 # **Incident Management Process**
 
@@ -24,10 +24,10 @@ Urgency: Indicates the time sensitivity of the incident resolution, taking into 
 All incidents or requests issued by the customer as tickets shall be assigned a priority level by the customer during ticket opening to determine the urgency/impact and upon receipt of the ticket, the assigned engineer will reassess the priority.
 
 # 1. Identification and Logging
-  Identification: Incidents can be reported by customers, detected by monitoring tools, or proactively identified by the Managed Services team..
+  Identification: Incidents can be reported by customers, detected by monitoring tools, or proactively identified by the Managed Services team.
   Logging: All incidents are logged in on Freshdesk with relevant details like date, time, description, and reporter's contact information.
 
-# 2. Categorisation and Prioritization
+# 2. Categorisation and Prioritisation
   Categorisation: Incidents are categorised based on the affected service, type of issue, etc.
   Prioritisation: Incidents are prioritised based on their urgency and impact on business operations. This helps in determining the order in which incidents should be addressed.
 
@@ -110,7 +110,7 @@ Best Effort: As the resolution or normalisation of an incident can be dependable
 
 # **Escalation Process**
   Automatic Escalation: If an incident is not resolved within the defined resolution time, it is automatically escalated to the next support level.
-  Manual Escalation: Managed Services engineer can manually escalate an incident if they believe it requires urgent attention or higher expertise.
+  Manual Escalation: Managed Services engineers can manually escalate an incident if they believe it requires urgent attention or higher expertise.
 
 # **Monitoring and Reporting**
   Incident Tracking: All incidents are tracked on Freshdesk.
@@ -120,4 +120,4 @@ Best Effort: As the resolution or normalisation of an incident can be dependable
 # **User Communication**
   Initial Acknowledgment: Customers receive an acknowledgment when an incident is logged.
   Status Updates: Regular updates are provided to customers on the status of their incidents.
-  Resolution Confirmation: Customers are notified when their incident is resolved and are asked to confirm resolution.
+  Resolution Confirmation: Customers are notified when their incident is resolved and are asked to confirm the resolution.
